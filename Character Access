@@ -1,1 +1,13 @@
+Character Access
+
+There are two ways to access an individual character in a string. The first is the charAt() method:
+
+return 'cat'.charAt(1)  // returns "a"
+
+The other way (introduced in ECMAScript 5) is to treat thestring as an array-like object, where individual characters correspond to a numerical index:
+
+return 'cat'[1] // returns "a"
+
+When using bracket notation for character access, attempting to delete or assign a value to these properties will not succeed. The properties involved are neither
+writable nor configurable. (See Object.defineProperty() for more information.)
 
